@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.tp3.dialog.ConfirmFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pausing now might impact your account status. We recommend continuing with the authentication process to ensure uninterrupted access."
+            android:layout_marginVertical="40dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="60dp"
+            android:gravity="center"
+            android:fontFamily="@font/outfit_medium"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cancel"
+                android:fontFamily="@font/outfit_bold"
+                android:textColor="@color/black"
+                android:background="@color/yellow"
+                android:layout_marginEnd="0.5dp"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="confirm"
+                android:fontFamily="@font/outfit_bold"
+                android:textColor="@color/black"
+                android:background="@color/yellow"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

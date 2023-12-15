@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.tp3.Tp3EmailConfiramtionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/city">
+        <LinearLayout
+            android:id="@+id/layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="100dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/outfit_bold"
+                android:text="@string/second_factor"
+                android:textColor="@color/yellow"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/txt_notify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/outfit_light"
+                android:text="@string/provide_code"/>
+
+            <TextView
+                android:id="@+id/txt_counter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/outfit_light"
+                android:text="60 s"
+                android:layout_marginTop="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="70dp"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edt_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edt_confirmation_design"
+                        android:gravity="center"
+                        android:hint="*"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="27sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edt_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edt_confirmation_design"
+                        android:gravity="center"
+                        android:hint="*"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="27sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edt_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edt_confirmation_design"
+                        android:gravity="center"
+                        android:hint="*"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="27sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/edt_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edt_confirmation_design"
+                        android:gravity="center"
+                        android:hint="*"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="27sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_marginVertical="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <EditText
+                        android:id="@+id/edt_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edt_confirmation_design"
+                        android:gravity="center"
+                        android:hint="*"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:textSize="27sp" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:text="@string/try_again"
+            android:textColor="@color/white"
+            android:layout_below="@id/linear_auth"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            app:cardCornerRadius="180dp"
+            android:layout_below="@+id/txt_try"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="120dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:background="@drawable/authentication_button_shape_tp3">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="@string/enter"
+                    android:textSize="17sp"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/authentication_button_shape_tp3"
+                    android:textAllCaps="false"/>
+                <ProgressBar
+                    android:id="@+id/progress_auth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/CustomProgressBarStyleTp3"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</FrameLayout>

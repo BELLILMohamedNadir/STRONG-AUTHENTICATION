@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity"
+    android:background="@drawable/city">
+
+    <TextView
+        android:id="@+id/txt_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/menu"
+        android:textColor="@color/yellow"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="45sp"
+        android:fontFamily="@font/outfit_bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txt_menu"
+        android:layout_above="@+id/txt_date">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_tp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/btn_tp2"
+            android:layout_marginHorizontal="130dp"
+            android:background="@drawable/button_shape_tp3"
+            android:textColor="@color/black"
+            android:text="@string/tp1"
+            android:textSize="20sp"
+            android:padding="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_tp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="130dp"
+            android:layout_centerInParent="true"
+            android:layout_marginVertical="40dp"
+            android:background="@drawable/button_shape_tp3"
+            android:textColor="@color/black"
+            android:text="@string/tp2"
+            android:textSize="20sp"
+            android:padding="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_tp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="130dp"
+            android:layout_below="@id/btn_tp2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_shape_tp3"
+            android:textColor="@color/black"
+            android:text="@string/tp3"
+            android:textSize="20sp"
+            android:padding="30dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        android:text="2023 / 2024"
+        android:textSize="17sp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

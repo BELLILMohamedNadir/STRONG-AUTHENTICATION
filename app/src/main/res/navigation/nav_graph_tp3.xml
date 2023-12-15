@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_tp3"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/tp3EmailConfiramtionFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3EmailConfiramtionFragment"
+        android:label="fragment_tp3_email_confiramtion"
+        tools:layout="@layout/fragment_tp3_email_confiramtion" >
+        <action
+            android:id="@+id/action_tp3EmailConfiramtionFragment_to_tp3FaceRecognitionFragment"
+            app:destination="@id/tp3FaceRecognitionFragment" />
+        <action
+            android:id="@+id/action_tp3EmailConfiramtionFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_tp3EmailConfiramtionFragment_to_tp3SendEmailFragment"
+            app:destination="@id/tp3SendEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp3FaceRecognitionFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3FaceRecognitionFragment"
+        android:label="fragment_tp3_face_recognition"
+        tools:layout="@layout/fragment_tp3_face_recognition" >
+        <action
+            android:id="@+id/action_tp3FaceRecognitionFragment_to_tp3CheckInfoFragment"
+            app:destination="@id/tp3CheckInfoFragment" />
+        <action
+            android:id="@+id/action_tp3FaceRecognitionFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp3ContentFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3ContentFragment"
+        android:label="fragment_tp3_content"
+        tools:layout="@layout/fragment_tp3_content" >
+        <action
+            android:id="@+id/action_tp3ContentFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp3EmailAuthenticationFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3EmailAuthenticationFragment"
+        android:label="fragment_tp3_email_authentication"
+        tools:layout="@layout/fragment_tp3_email_authentication" >
+        <action
+            android:id="@+id/action_tp3EmailAuthenticationFragment_to_tp3PasswordAuthenticationFragment"
+            app:destination="@id/tp3PasswordAuthenticationFragment" />
+        <action
+            android:id="@+id/action_tp3EmailAuthenticationFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp3PasswordAuthenticationFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3PasswordAuthenticationFragment"
+        android:label="fragment_tp3_password_authentication"
+        tools:layout="@layout/fragment_tp3_password_authentication" >
+        <action
+            android:id="@+id/action_tp3PasswordAuthenticationFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_tp3PasswordAuthenticationFragment_to_tp3SendEmailFragment"
+            app:destination="@id/tp3SendEmailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp3CheckInfoFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3CheckInfoFragment"
+        android:label="fragment_tp3_check_info"
+        tools:layout="@layout/fragment_tp3_check_info" >
+        <action
+            android:id="@+id/action_tp3CheckInfoFragment_to_tp3ContentFragment"
+            app:destination="@id/tp3ContentFragment" />
+        <action
+            android:id="@+id/action_tp3CheckInfoFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.tp.ui.fragment.tp3.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_tp3EmailAuthenticationFragment"
+            app:destination="@id/tp3EmailAuthenticationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp3SendEmailFragment"
+        android:name="com.example.tp.ui.fragment.tp3.Tp3SendEmailFragment"
+        android:label="fragment_tp3_send_email"
+        tools:layout="@layout/fragment_tp3_send_email" >
+        <action
+            android:id="@+id/action_tp3SendEmailFragment_to_tp3EmailConfiramtionFragment"
+            app:destination="@id/tp3EmailConfiramtionFragment" />
+        <action
+            android:id="@+id/action_tp3SendEmailFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graphe"
+    app:startDestination="@id/authenticationFragment">
+    <fragment
+        android:id="@+id/authenticationFragment"
+        android:name="com.example.tp.ui.fragment.tp1.AuthenticationFragment"
+        android:label="fragment_authentication"
+        tools:layout="@layout/fragment_authentication" >
+        <action
+            android:id="@+id/action_authenticationFragment_to_tp1ContainerFragment"
+            app:destination="@id/tp1ContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tp1ContainerFragment"
+        android:name="com.example.tp.ui.fragment.tp1.Tp1ContainerFragment"
+        android:label="fragment_tp1_container"
+        tools:layout="@layout/fragment_tp1_container" >
+        <action
+            android:id="@+id/action_tp1ContainerFragment_to_partie1Fragment"
+            app:destination="@id/partie1Fragment" />
+        <action
+            android:id="@+id/action_tp1ContainerFragment_to_partie4Fragment"
+            app:destination="@id/partie4Fragment" />
+        <action
+            android:id="@+id/action_tp1ContainerFragment_to_authenticationFragment"
+            app:destination="@id/authenticationFragment" />
+        <action
+            android:id="@+id/action_tp1ContainerFragment_to_part3ChoiceFragment"
+            app:destination="@id/part3ChoiceFragment" />
+        <action
+            android:id="@+id/action_tp1ContainerFragment_to_part2ChoiceFragment"
+            app:destination="@id/part2ChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partie1Fragment"
+        android:name="com.example.tp.ui.fragment.tp1.Partie1Fragment"
+        android:label="fragment_partie1"
+        tools:layout="@layout/fragment_partie1" >
+        <action
+            android:id="@+id/action_partie1Fragment_to_tp1ContainerFragment"
+            app:destination="@id/tp1ContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partie2Fragment"
+        android:name="com.example.tp.ui.fragment.tp1.Partie2Fragment"
+        android:label="fragment_partie2"
+        tools:layout="@layout/fragment_partie2" >
+        <action
+            android:id="@+id/action_partie2Fragment_to_part2ChoiceFragment"
+            app:destination="@id/part2ChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partie3Fragment"
+        android:name="com.example.tp.ui.fragment.tp1.Partie3Fragment"
+        android:label="fragment_partie3"
+        tools:layout="@layout/fragment_partie3" >
+        <action
+            android:id="@+id/action_partie3Fragment_to_part3ChoiceFragment"
+            app:destination="@id/part3ChoiceFragment" />
+        <action
+            android:id="@+id/action_partie3Fragment_to_showEncryptedImageFragment"
+            app:destination="@id/showEncryptedImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/partie4Fragment"
+        android:name="com.example.tp.ui.fragment.tp1.Partie4Fragment"
+        android:label="fragment_partie4"
+        tools:layout="@layout/fragment_partie4" >
+        <action
+            android:id="@+id/action_partie4Fragment_to_tp1ContainerFragment"
+            app:destination="@id/tp1ContainerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/part3ChoiceFragment"
+        android:name="com.example.tp.ui.fragment.tp1.Part3ChoiceFragment"
+        android:label="fragment_part3_choice"
+        tools:layout="@layout/fragment_part3_choice" >
+        <action
+            android:id="@+id/action_part3ChoiceFragment_to_tp1ContainerFragment"
+            app:destination="@id/tp1ContainerFragment" />
+        <action
+            android:id="@+id/action_part3ChoiceFragment_to_partie3Fragment"
+            app:destination="@id/partie3Fragment" />
+        <action
+            android:id="@+id/action_part3ChoiceFragment_to_part3DecryptionFragment"
+            app:destination="@id/part3DecryptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/part3DecryptionFragment"
+        android:name="com.example.tp.ui.fragment.tp1.Part3DecryptionFragment"
+        android:label="fragment_part3_decryption"
+        tools:layout="@layout/fragment_part3_decryption" >
+        <action
+            android:id="@+id/action_part3DecryptionFragment_to_part3ChoiceFragment"
+            app:destination="@id/part3ChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showEncryptedImageFragment"
+        android:name="com.example.tp.ui.fragment.tp1.ShowEncryptedImageFragment"
+        android:label="fragment_show_encrypted_image"
+        tools:layout="@layout/fragment_show_encrypted_image" >
+        <action
+            android:id="@+id/action_showEncryptedImageFragment_to_partie3Fragment"
+            app:destination="@id/partie3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/part2DefenseFragment"
+        android:name="com.example.tp.ui.fragment.tp1.Part2DefenseFragment"
+        android:label="fragment_part2_defense"
+        tools:layout="@layout/fragment_part2_defense" >
+        <action
+            android:id="@+id/action_part2DefenseFragment_to_part2ChoiceFragment"
+            app:destination="@id/part2ChoiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/part2ChoiceFragment"
+        android:name="com.example.tp.ui.fragment.tp1.Part2ChoiceFragment"
+        android:label="fragment_part2_choice"
+        tools:layout="@layout/fragment_part2_choice" >
+        <action
+            android:id="@+id/action_part2ChoiceFragment_to_tp1ContainerFragment"
+            app:destination="@id/tp1ContainerFragment" />
+        <action
+            android:id="@+id/action_part2ChoiceFragment_to_partie2Fragment"
+            app:destination="@id/partie2Fragment" />
+        <action
+            android:id="@+id/action_part2ChoiceFragment_to_part2DefenseFragment"
+            app:destination="@id/part2DefenseFragment" />
+    </fragment>
+
+</navigation>

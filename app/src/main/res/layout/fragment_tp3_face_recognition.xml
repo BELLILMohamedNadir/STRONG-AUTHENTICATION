@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.tp3.Tp3FaceRecognitionFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.camera.view.PreviewView
+            android:id="@+id/previewView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:background="@drawable/ic_scan"
+                android:layout_marginHorizontal="5dp"
+                android:layout_marginTop="50dp"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_centerHorizontal="true">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/progress"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:cardCornerRadius="180dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ProgressBar
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            style="@style/CustomProgressBarStyleBlack"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_take"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    app:cardCornerRadius="180dp"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_button1"
+                            android:scaleType="centerCrop"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

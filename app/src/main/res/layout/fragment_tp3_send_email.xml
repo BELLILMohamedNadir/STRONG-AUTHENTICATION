@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.tp3.Tp3SendEmailFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/city">
+        <TextView
+            android:id="@+id/txt_wait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="38sp"
+            android:fontFamily="@font/outfit_medium"
+            android:textColor="@color/yellow"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/please_wait"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/txt_wait"
+            android:layout_marginHorizontal="80dp"
+            android:gravity="center_vertical">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/txt_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/processing_request"
+                android:fontFamily="@font/outfit_light"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/white"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_retry_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="120dp"
+            android:text="@string/retry"
+            android:background="@drawable/button_shape_tp3"
+            android:visibility="gone"
+            android:fontFamily="@font/outfit_bold"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/linear_send"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ProgressBar
+                android:id="@+id/progress_send_email"
+                style="@style/CustomProgressBarStyleBlackTp3"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

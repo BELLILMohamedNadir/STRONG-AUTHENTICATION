@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.tp3.dialog.RetryFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginTop="30dp"
+                android:layout_marginHorizontal="100dp"/>
+            <TextView
+                android:id="@+id/txt_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/attempts"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/outfit_bold"
+                android:gravity="center"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_retry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/retry"
+                android:fontFamily="@font/outfit_bold"
+                android:textSize="14sp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/authentication_button_shape_tp3"
+                android:textAllCaps="false"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"
+                android:layout_marginVertical="5dp"
+                android:layout_marginHorizontal="130dp"/>
+        </LinearLayout>
+
+</FrameLayout>
