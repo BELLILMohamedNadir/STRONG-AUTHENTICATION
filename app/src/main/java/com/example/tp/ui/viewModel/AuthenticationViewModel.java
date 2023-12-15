@@ -28,6 +28,7 @@ public class AuthenticationViewModel extends ViewModel {
     public static MutableLiveData<Integer> liveResponseTwoFactorAuth =new MutableLiveData<>();
     public static MutableLiveData<Integer> liveCheckInfo =new MutableLiveData<>();
 
+    // calling api with retrofit and rx java
 
     public void requestPublicKey(UserEmail email){
         ApiCall.getInstance()
